@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    
+    <title>테트리스 게임</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" type="text/css" href="css/tetris.css">
+    <script type="text/javascript" src="js/tetris.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="assets/css/fontawesome.css">
+    <link rel="stylesheet" href="assets/css/templatemo-cyborg-gaming.css">
+    <link rel="stylesheet" href="assets/css/owl.css">
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <link rel="stylesheet"href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+  </head>
+  
+  <body>
+  
+    </header>
+    <h1>***-테트리스-***</h1>
+    <div class="wrapper-container">
+        <span class="tetris-container">
+            <canvas id="stage" width="250px" height="500px" >
+            </canvas>
+            <span class="tetris-panel-container">
+              <p>Next:</p>
+                <canvas id="next" width="150px" height="150px">
+                </canvas>
+              <p>LINES:<span id="lines">0</span></p>
+              <p><span id="message"></span></p>
+              <div class="tetris-panel-container-padding"></div>
+              <table class="tetris-button-panel">
+                <tr>
+                  <td></td>
+                  <td id="tetris-rotate-button" class="tetris-button">Ctrl=↻</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td id="tetris-move-left-button"class="tetris-button">←</td>
+                  <td id="tetris-fall-button"class="tetris-button">↓</td>
+                  <td id="tetris-move-right-button"class="tetris-button">→</td>
+                </tr>
+              </table>
+            </span>
+        </span>
+    </div>
+    <script>
+      var tetris = new Tetris();
+      tetris.startGame();
+    </script>
+     <script src="vendor/jquery/jquery.min.js"></script>
+     <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+   
+     <script src="assets/js/isotope.min.js"></script>
+     <script src="assets/js/owl-carousel.js"></script>
+     <script src="assets/js/tabs.js"></script>
+     <script src="assets/js/popup.js"></script>
+     <script src="assets/js/custom.js"></script>
+     <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            
+            
+            <br><br><br><a href="/index.php" style="color: aliceblue;">go to Home</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  
+  </body>
+</html>
